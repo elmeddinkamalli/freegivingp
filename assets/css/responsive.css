@@ -1,0 +1,334 @@
+/***************************
+
+Introduction | Responsive css document
+
+	1. 1000px
+	2. 767px
+	3. 576px
+	4. 520px
+	5. 450px
+	6. 400px
+	7. 330px
+	8. 300px
+
+****************************/
+
+
+
+/***************************
+1.1000px
+****************************/
+
+@media only screen and (max-width: 1000px)
+{
+	.charitables-title h1,
+	.shared-title h1
+	{
+		font-size: 30px;
+	}
+	.charitables-contry
+	{
+		font-size: 25px;
+	}
+}
+
+/***************************
+2.767px
+****************************/
+
+@media only screen and (max-width: 767px)
+{
+	.center,
+	.right-side{
+		display: none;
+	}
+	.small-screen-menu{
+		display: flex;
+	}
+	.enterence-text
+	{
+		font-size: 22px;
+	}
+	.enterence-text span
+	{
+		font-size: 30px;
+	}
+	.charitables-title h1,
+	.shared-title h1
+	{
+		font-size: 23px;
+	}
+	.charitables-contry
+	{
+		font-size: 22px;
+	}
+	.card-title a,
+	.username-on-post,
+	.location,
+	.bid,
+	.shared-date
+	{
+		font-size: 12px;
+	}
+	.bid img
+	{
+		width: 20px;
+	}
+	.location img
+	{
+		width: 8px;
+	}
+	.card-title
+	{
+		line-height: 0.9em;
+		margin-bottom: 5px;
+	}
+	.load-more-btn-container button
+	{
+		font-size: 15px;
+	}
+	.footer-logo img
+	{
+    	width: 150px;
+	}
+	.footer-proverb p
+	{
+    	font-size: 10px;
+	}
+	.footer-menu a
+	{
+		font-size: 12px;
+	}
+}
+
+/***************************
+3.670px
+****************************/
+
+@media only screen and (max-width: 670px){
+	.fa-bars{
+		right: 20px;
+	}
+}
+
+/***************************
+3.576px
+****************************/
+
+@media only screen and (max-width: 576px)
+{
+	.charitables-title h1,
+	.shared-title h1
+	{
+		font-size: 18px;
+	}
+	.charitables-contry
+	{
+		font-size: 18px;
+	}
+	#item-1
+	{
+    margin-right: 5px;
+    margin-bottom: 10px;
+	}
+	#item-2
+	{
+	    margin-right: 5px;
+	    margin-bottom: 10px;
+	}
+	#item-3
+	{
+	    margin-right: 5px;
+	    margin-bottom: 10px;
+	}
+	#item-4
+	{
+	    margin-right: 5px;
+	    margin-bottom: 10px;
+	}
+	#item-5
+	{
+	    margin-right: 5px;
+	}
+	#item-6
+	{
+	    margin-right: 5px;
+	}
+}
+
+/***************************
+4.520px
+****************************/
+
+@media only screen and (max-width: 520px)
+{
+	#item-1
+	{
+    	width: 100% !important;
+    	margin-right: 0;
+    	margin-left: 0;
+	}
+	#item-2
+	{
+	    width: 100% !important;
+	    margin-right: 0;
+    	margin-left: 0;
+	}
+	#item-3
+	{
+	    width: 100% !important;
+	    margin-right: 0;
+    	margin-left: 0;
+	}
+	#item-4
+	{
+	    width: 100% !important;
+	    margin-right: 0;
+    	margin-left: 0;
+	}
+	#item-5
+	{
+	    width: 100% !important;
+	    margin-bottom: 10px;
+	    margin-right: 0;
+    	margin-left: 0;
+	}
+	#item-6
+	{
+	    width: 100% !important;
+	    margin-right: 0;
+    	margin-left: 0;
+	}
+}
+
+/***************************
+5.450px
+****************************/
+
+@media only screen and (max-width: 450px)
+{
+	.footer-proverb
+	{
+		display: none;
+	}
+	footer
+	{
+		height: 105px;
+	}
+	footer .row
+	{
+		justify-content: space-between;
+	}
+	.footer-menu-container
+	{
+		-ms-flex: 0 0 40%;
+    	flex: 0 0 40%;
+    	max-width: 40%;
+	}
+	#copyright,
+	#copyright a{
+		font-size: 14px;
+	}
+}
+
+/***************************
+6.400px
+****************************/
+
+@media only screen and (max-width: 400px)
+{
+	.enterence-text
+	{
+		font-size: 20px;
+	}
+	.enterence-text span
+	{
+		font-size: 26px;
+	}
+	.card_background
+	{
+    	height: 230px;
+    }
+    .charitables-title h1,
+	.shared-title h1
+	{
+		font-size: 16px;
+	}
+	.charitables-contry
+	{
+		font-size: 16px;
+	}
+	.load-more-btn-container button
+	{
+    	font-size: 14px;
+	}
+}
+
+/***************************
+7.330px
+****************************/
+
+@media only screen and (max-width: 330px)
+{
+	.enterence-text
+	{
+		font-size: 18px;
+	}
+	.enterence-text span
+	{
+		font-size: 22px;
+	}
+	.charitables-title h1
+	{
+		font-size: 14px;
+	}
+	.charitables-contry
+	{
+		font-size: 14px;
+	}
+	.shared-title h1
+	{
+		font-size: 14px;
+	}
+}
+
+/***************************
+8.300px
+****************************/
+
+@media only screen and (max-width: 300px)
+{
+	.enterence-text
+	{
+		font-size: 16px;
+	}
+	.enterence-text span
+	{
+		font-size: 20px;
+	}
+	.card_background
+	{
+    	height: 200px;
+    }
+    .charitables-title h1
+	{
+		font-size: 12px;
+	}
+	.charitables-contry
+	{
+		font-size: 12px;
+	}
+	.person .person-img
+	{
+		width: 150px;
+		height: 150px;
+	}
+	.person-info h5
+	{
+		font-size: 19px;
+	}
+	.person-info p
+	{
+		font-size: 13px;
+	}
+}

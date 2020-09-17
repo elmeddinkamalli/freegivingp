@@ -1,0 +1,543 @@
+/***************************
+
+Introduction
+1.Fonts
+2.General styles
+3.Header
+4.Enterence
+5.Charitables slider
+6.Last sharings
+7.Load more button
+8.Footer
+
+****************************/
+
+/***************************
+1.Fonts
+****************************/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+@font-face{
+	font-family: AGRESSIVE;
+	src: url("../../lib/fonts/AGRESSIVE.otf") format("opentype");
+	src: url("../../lib/fonts/AGRESSIVE.woff") format("woff"),
+		 url("../../lib/fonts/AGRESSIVE.ttf")  format("truetype"),
+		 url("../../lib/fonts/AGRESSIVE.svg#svgFontName") format("svg");
+}
+
+/***************************
+2.General styles
+****************************/
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+*::after,
+*::before
+{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div
+{
+	display: block;
+	position: relative;
+}
+ul
+{
+	list-style: none;
+	margin-bottom: 0;
+}
+a,
+p
+{
+	color: #000;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 14px;
+}
+a, a:hover, a:visited, a:active, a:link
+{
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+.clear
+{
+	clear: both;
+}
+.clearfix::before, .clearfix::after
+{
+	content: "";
+	display: table;
+}
+.clearfix::after
+{
+	clear: both;
+}
+.clearfix
+{
+	zoom: 1;
+}
+.trans_200
+{
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.trans_300
+{
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-ms-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+.trans_400
+{
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-ms-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+	transition: all 400ms ease;
+}
+.trans_500
+{
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+.super-container
+{
+	width: 100%;
+	overflow: hidden;
+}
+
+/***************************
+3. Header
+****************************/
+
+header
+{
+	background: rgba(78, 180, 251, 15%);
+	position: fixed;
+	left: 0;
+	right: 0; 
+	top: 0;
+	z-index: 100;
+	transition: background .5s;
+}
+.left-side img
+{
+	width: 65px;
+}
+.right-side ul
+{
+	padding-right: 0;
+}
+.left-side > ul,
+.center > nav,
+.center > nav > ul
+{
+	height: 100%;
+}
+a.nav-link
+{
+	color: #FFFFFF;
+}
+.center li:first-child
+{
+	margin-right: 25px;
+}
+.center li:last-child
+{
+	margin-left: 25px;
+}
+.user-img{
+	width: 20px;
+    margin-left: 7px;
+}
+.notifications{
+	background-color: red;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    right: -9px;
+    font-size: 13px;
+    border-radius: 100%;
+    padding: -10px 5px 12px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 900;
+}
+.fa-bars{
+	position: absolute;
+    right: 0;
+    top: -35px;
+    font-size: 25px;
+	color: #FFF;
+	cursor: pointer;
+}
+.hidden-menu{
+	display: none;
+}
+.hidden-menu hr{
+	margin: 0;
+	padding: 0;
+}
+.small-screen-menu{
+	display: none;
+}
+/***************************
+4. Enterence
+****************************/
+
+.enterence-bg-img
+{
+	position: relative;
+	height: 100vh;
+	background-image: url(../images/enterence.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.enterence-text-cont
+{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100vh - 170px);
+}
+.enterence-text
+{
+	text-align: center;
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1.3em;
+    color: #FFFFFF;
+}
+.enterence-text span
+{
+	font-family: AGRESSIVE, sans-serif;
+    font-size: 44px;
+    display: block;
+    color: #17ed07;
+}
+
+/***************************
+5. Charitables slider
+****************************/
+.owl-item
+{
+	display: flex;
+	justify-content: center;
+}
+.charitables
+{
+	margin-top: 55px;
+}
+.charitables-title
+{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.charitables-title h1
+{
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: 200;
+    font-family: Comfortaa, sans-serif;
+}
+.charitables-num
+{
+	font-family: AGRESSIVE, sans-serif;
+    color: #fe0018;
+}
+.charitables-contry
+{
+	display: block;
+	font-family: AGRESSIVE, sans-serif;
+	font-size: 35px;
+}
+.prev-button,
+.next-button
+{
+	height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.person .person-img
+{
+	background-image: url(assets/images/person.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 170px;
+    background-size: cover;
+    border-radius: 50%;
+}
+.person-info
+{
+	text-align: center;
+}
+.person-info h5
+{
+	color: rgb(255,0,0);
+	margin-bottom: 0;
+}
+.person-info p
+{
+	margin-bottom: 0;
+	font-weight: 600;
+}
+.person-info p:nth-child(2) span
+{
+	color: rgb(255, 0, 0);
+}
+.person-info p:last-child span
+{
+	color: rgb(0, 0, 255);
+}
+
+/***************************
+6. Last sharings
+****************************/
+
+.last-sharings
+{
+	margin-top: 55px;
+}
+.shared-title
+{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.shared-title h1
+{
+	margin: 0 auto;
+	font-size: 40px;
+	font-weight: 200;
+    font-family: Comfortaa, sans-serif;
+}
+.card_background
+{
+	height: 250px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.card_background::before
+{
+	content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    display: block;
+}
+.card-body
+{
+	position: absolute;
+}
+.grid-item {
+    float: left;
+}
+#item-1
+{
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+#item-2
+{
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+#item-3
+{
+	margin-right: 10px;
+	margin-bottom: 15px;
+}
+#item-4
+{
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+#item-5
+{
+	margin-right: 10px;
+}
+#item-6
+{
+	margin-left: 10px;
+}
+.card-body
+{
+	width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-upside
+{
+	display: flex;
+    flex-direction: column;
+}
+.card-downside
+{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-title
+{
+	margin-bottom: 0;
+}
+.card-title a
+{
+	color: #d4d3d3;
+    font-family: Comfortaa, sans-serif;
+    font-size: 15px;
+}
+.card-title a:hover
+{
+	color: #FFFFFF;
+}
+.username-on-post
+{
+	color: #79ff67;
+}
+.username-on-post:hover
+{
+	color: #1eff00;
+}
+.location
+{
+	color: #d4d3d3;
+}
+.location img
+{
+	width: 10px;
+    margin-right: 5px;
+}
+.bid
+{
+	display: flex;
+	align-items: center;
+	font-family: Comfortaa, sans-serif;
+    color: #FFF;
+    font-weight: 500;
+}
+.bid img
+{
+	width: 27px;
+	margin-left: 3px;
+}
+.shared-date
+{
+	color: #FFFFFF;
+    font-family: Comfortaa, sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+/***************************
+7. Load more
+****************************/
+
+.load-more
+{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.load-more-btn-container
+{
+	display: flex;
+	justify-content: center;
+}
+.load-more-btn-container button
+{
+	background: transparent;
+    outline: none;
+    padding: 4px 15px;
+    border: 1px solid #444444;
+    color: #444444;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Comfortaa, sans-serif;
+    text-shadow: 0px 0px 0px #444444;
+}
+.load-more-btn-container button:hover
+{
+	background: #444444;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 0px #FFFFFF;
+}
+
+/***************************
+8. Footer
+****************************/
+
+footer
+{
+	background: #748b8a;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.footer-logo
+{
+	display: flex;
+	align-items: center;
+}
+.footer-logo img
+{
+	width: 240px;
+}
+.footer-proverb p
+{
+	margin-bottom: 0;
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer-proverb p:first-child
+{
+	padding-top: 10px;
+}
+.footer-menu
+{
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+}
+.footer-menu a
+{
+	color: #000;
+	font-weight: 600;
+}
+#copyright {
+	background-color: #b2b801;
+	padding: 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Righteous", cursive;
+	font-size: 16px;
+  }
